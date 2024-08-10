@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import './Contact.css'
 function Contact() {
 useEffect(()=>{
-    document.title = "navin .contact"
+    document.title = "suresh .contact"
     
 },[])
   return (
@@ -24,7 +24,7 @@ useEffect(()=>{
                 Fill the form below and connect with me!
               </p>
 
-              <form  className="space-y-4  " action="https://submit-form.com/Uc5gI33Ok">
+              <form  className="space-y-4  " >
                 <div>
                   <label
                     name="name"

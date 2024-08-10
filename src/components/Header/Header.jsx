@@ -8,7 +8,7 @@ function Header() {
       </div>
       <div>
         <h1 className=" text-xl lg:text-3xl text-[#FAFAFA] font-bold">Hello I'm</h1>
-        <p className="text-[#CFE5FF] font-bold text-2xl lg:text-4xl">Navin Chaudhary</p>
+        <p className="text-[#CFE5FF] font-bold text-2xl lg:text-4xl">Suresh Chaudhary</p>
         <p className="lg:text-lg text-sm text-[#ebebf1]">Frontend Focused Full Stack Developer</p>
       </div>
     </header>

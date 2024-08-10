@@ -15,7 +15,7 @@ function Navbar() {
           to="/"
           className="text-xl hover:text-white transition-all duration-300"
         >
-          Navin Chaudhary
+          Suresh Chaudhary
         </Link>
       </div>
       
@@ -23,7 +23,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white ">
           <Link
             className="flex items-center px-1  tooltip"
-            to='mailto:hello@navin.bio'
+            
             aria-label={"Email"}
           >
             <MdEmail />
@@ -32,7 +32,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white">
           <Link
             className="flex items-center px-1 tooltip"
-            to='https://github.com/Navin-Chaudhary'
+            
             aria-label={"Github"}
           >
             <IoLogoGithub/>
@@ -41,7 +41,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white">
           <Link
             className="flex items-center px-1 tooltip"
-            to='https://www.linkedin.com/in/navin-chaudhary09/'
+            
             aria-label={"LinkedIn"}
           >
             <FaLinkedin/>
@@ -50,7 +50,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white">
           <Link
             className="flex items-center px-1 tooltip"
-            to='https://peerlist.io/navinhaudhary'
+           
             aria-label={"Peerlist"}
           >
             <SiPeerlist/>
@@ -59,7 +59,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white">
           <Link
             className="flex items-center pl-1 tooltip"
-            to='https://x.com/NavinChaud24674'
+            
             aria-label={"X/Twitter"}
           >
             <FaXTwitter />
