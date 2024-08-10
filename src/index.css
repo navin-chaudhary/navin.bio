@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 .main{
-    font-family: "Versel";
-    
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    /* word-spacing: 1px; */
 }
-@font-face {
-    font-family: 'Versel';
-    src: url('./font/e11418ac562b8ac1.p.woff2') format('truetype');
-  }

@@ -1,56 +1,66 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import './About.css'
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import { useEffect } from "react";
+import Loader from "../Loader/Loader"; 
+
 function About() {
-    useEffect(()=>{
-        document.title='navin .about';
-    },[])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    document.title = 'navin .about';
+    setLoading(false)
+  }, [])
+
   return (
     <>
-      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen  pt-0 p-3 overflow-hidden">
+      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen  pt-0 p-3 overflow-hidden font">
         <div className="max-w-3xl mx-auto ">
-          <Navbar />
-          <div className="min-h-[calc(100vh_-_160px)] ">
-          <section className="mb-8  pt-8 ">
-            <p className="text-[#c2c1c1] text-lg capitalize ">
-              Hey everyone👋! I'm Navin Chaudhary, a passionate and driven
-              software engineer currently in my second year of college pursuing
-              a Bachelor's degree in Computer engineering. With a keen interest
-              in technology and a dedication to learning and growth, I strive to
-              make meaningful contributions in the field of software
-              engineering.Beyond my academic and professional endeavors, I have
-              a keen interest in Frontend Web Devlopment.
-            </p>
-          </section>
-          <div class="container mx-auto border-t-[1px] border-[#939396] pt-4 ">
-            <h1 class="text-4xl font-bold mb-4 text-white border-b-2 border-white w-max">Education</h1>
-            <ul class=" ">
-              <li class="mb-3">
-                <h2 class="text-xl font-semibold mb-1">
-                  Bachelor of Engineering in Computer engineering
-                </h2>
-                <p class="mb-1">
-                  <span class="inline-block mr-2">🏫</span>
-                  LDRP Institute of Technology and Research
-                </p>
-                <p class="mb-1">
-                  <span class="inline-block mr-2">📍</span>
-                  GANDHINAGAR
-                </p>
-                <p>
-                  <span class="inline-block mr-2">⏳</span>
-                  July 2023 - Current
-                </p>
-              </li>
-            </ul>
-          </div>
-          </div>
-        <Footer/>
+          {loading ? (
+            <Loader />
+          ) : (
+            <>
+              <Navbar />
+              <div className="min-h-[calc(100vh_-_160px)] ">
+                <section className="mb-8  pt-8 ">
+                  <p className="text-[#c2c1c1] text-lg capitalize ">
+                    Hey everyone👋! I'm Navin Chaudhary, a passionate and driven
+                    software engineer currently in my second year of college pursuing
+                    a Bachelor's degree in Computer engineering. With a keen interest
+                    in technology and a dedication to learning and growth, I strive to
+                    make meaningful contributions in the field of software
+                    engineering.Beyond my academic and professional endeavors, I have
+                    a keen interest in Frontend Web Devlopment.
+                  </p>
+                </section>
+                <div class="container mx-auto border-t-[1px] border-[#939396] pt-4 ">
+                  <h1 class="text-4xl font-bold mb-4 text-white border-b-2 border-white w-max">Education</h1>
+                  <ul class=" ">
+                    <li class="mb-3">
+                      <h2 class="text-xl font-semibold mb-1">
+                        Bachelor of Engineering in Computer engineering
+                      </h2>
+                      <p class="mb-1">
+                        <span class="inline-block mr-2">🏫</span>
+                        LDRP Institute of Technology and Research
+                      </p>
+                      <p class="mb-1">
+                        <span class="inline-block mr-2">📍</span>
+                        GANDHINAGAR
+                      </p>
+                      <p>
+                        <span class="inline-block mr-2">⏳</span>
+                        July 2023 - Current
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <Footer />
+            </>
+          )}
         </div>
-      
       </div>
-      
     </>
   );
 }

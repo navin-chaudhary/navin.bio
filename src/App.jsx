@@ -7,23 +7,33 @@ import './index.css'
 import Navbar from './components/Navbar/Navbar';
 // import { Outlet } from'react-router-dom';
 import Footer from './components/Footer/Footer';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Loader from './components/Loader/Loader';
 function App() {
+  const [loading, setLoading] = useState(true);
   useEffect(()=>{
+    <Loader/>
     document.title='navin .home'
+    setTimeout(() => {
+      
+      setLoading(false)
+    }, 200);
   },[])
   return (
     <div className="main bg-[#040816] text-[#9e9ea4] min-h-screen p-3 pt-0 overflow-x-hidden">
+    {loading ? (
+      <Loader />
+    ) : (
       <div className="max-w-3xl mx-auto">
-        <Navbar/>
+        <Navbar />
         <Header />
         <About />
-        <Projects/>
+        <Projects />
         <Skills />
-        <Footer/>
+        <Footer />
       </div>
-      
-    </div>
+    )}
+  </div>
   );
 }
 
