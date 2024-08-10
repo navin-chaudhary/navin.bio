@@ -50,7 +50,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white">
           <Link
             className="flex items-center px-1 tooltip"
-            to='https://peerlist.io/navinhaudhary'
+            to='https://peerlist.io/navinchaudhary'
             aria-label={"Peerlist"}
           >
             <SiPeerlist/>
