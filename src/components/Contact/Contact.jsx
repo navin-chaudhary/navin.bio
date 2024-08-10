@@ -22,7 +22,7 @@ useEffect(()=>{
                 .Fill the form below and connect with me!
               </p>
 
-              <form  className="space-y-4">
+              <form  className="space-y-4" action="https://submit-form.com/Uc5gI33Ok">
                 <div>
                   <label
                     htmlFor="name"

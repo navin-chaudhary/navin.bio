@@ -23,7 +23,7 @@ function About() {
               a keen interest in Frontend Web Devlopment.
             </p>
           </section>
-          <div class="container mx-auto border-t-2 border-[#939396] pt-4 ">
+          <div class="container mx-auto border-t-[1px] border-[#939396] pt-4 ">
             <h1 class="text-4xl font-bold mb-4 text-white border-b-2 border-white w-max">Education</h1>
             <ul class=" ">
               <li class="mb-3">
