@@ -13,7 +13,7 @@ function App() {
     document.title='navin .home'
   },[])
   return (
-    <div className="bg-[#040816] text-[#9e9ea4] min-h-screen p-4 pt-0">
+    <div className="bg-[#040816] text-[#9e9ea4] min-h-screen p-2 pt-0">
       <div className="max-w-3xl mx-auto">
         <Navbar/>
         <Header />

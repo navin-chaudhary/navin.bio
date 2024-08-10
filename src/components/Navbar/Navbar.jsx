@@ -32,7 +32,11 @@ function Navbar() {
         </NavLink>
         <NavLink 
         to='/contact'
-        className="cursor-pointer hover:text-white transition-all duration-300">
+        className={({ isActive }) =>
+          isActive
+            ? "text-white"
+            : "cursor-pointer hover:text-white transition-all duration-300"
+        }>
           Contact
         </NavLink>
       </ul>

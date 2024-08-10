@@ -9,11 +9,11 @@ useEffect(()=>{
 },[])
   return (
     <>
-      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen pt-0">
+      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen pt-0 p-2">
         <div className="max-w-3xl mx-auto">
           <Navbar />
           <div className="flex justify-center">
-            <div className="shadow-sm shadow-[#626ac0] p-8 rounded-lg  max-w-md w-full min-h-[calc(100vh_-_156px)] mt-2">
+            <div className="shadow-sm shadow-[#626ac0] p-8 rounded-lg  max-w-md w-full  mt-2">
               <h2 className="text-2xl lg:text-3xl text-white font-semibold mb-4">
                 Contact Us
               </h2>
