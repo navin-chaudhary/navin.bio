@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   return (
     <section className="mb-8 border-t-[1px] border-[#939396] pt-5">
@@ -11,9 +11,9 @@ function Projects() {
         <div className="bg-gray-900 p-4 rounded-lg ">
           <Link
             to="https://git-user-liart.vercel.app"
-            className="font-bold border-b-2 tracking-widest hover:text-blue-500 transition-all duration-300 border-gray-500  w-max text-lg text-white cursor-pointer"
+            className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
           >
-            Gituser
+            Gituser <span className="hover:translate-y-[-2px] hover:text-blue-500 transition-all duration-300"><FaExternalLinkAlt /></span>
           </Link>
           <p className="text-[#c2c1c1] capitalize mt-3">
             Gituser is a website that allows you to enter a username and get all
@@ -24,11 +24,11 @@ function Projects() {
         <div className="bg-gray-900 p-4 rounded-lg">
           <Link
             to="https://weatherapp-navin-projects.vercel.app/"
-            className="font-bold border-b-2 text-lg tracking-widest hover:text-blue-500 transition-all duration-300 border-gray-500 w-max text-white cursor-pointer"
+            className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
           >
-            Weather App
+            Weather App <span className="hover:translate-y-[-2px] hover:text-blue-500 transition-all duration-300"><FaExternalLinkAlt /></span>
           </Link>
-          <p className="text-[#c2c1c1] capitalize mt-3">
+          <p className="text-[#c2c1c1] capitalize mt-3 ">
             weather app is a website where you will find multiple tools on a
             single page, which includes week's forecast, Temperature, Weather
             mode,uv, Wind, Pressure, Humidity, Sunset/sunrise time and much
@@ -38,9 +38,9 @@ function Projects() {
         <div className="bg-gray-900 p-4 rounded-lg">
           <Link
             to="https://news-theta-puce.vercel.app"
-            className="font-bold border-b-2  hover:text-blue-500 transition-all duration-300border-gray-500 w-max text-lg tracking-widest text-white cursor-pointer"
+            className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
           >
-            News
+            News <span className="hover:translate-y-[-2px] hover:text-blue-500 transition-all duration-300"><FaExternalLinkAlt /></span>
           </Link>
           <p className="text-[#c2c1c1] capitalize mt-3">
             News is a React app where you will find news highlights. This data
@@ -52,9 +52,9 @@ function Projects() {
         <div className="bg-gray-900 p-4 rounded-lg">
           <Link
             to="https://todo-list-gamma-wheat.vercel.app"
-            className="font-bold border-b-2 tracking-widest hover:text-blue-500 transition-all duration-300 border-gray-500 w-max text-lg text-white cursor-pointer"
+            className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
           >
-            To-do List
+            To-do List <span className="hover:translate-y-[-2px] hover:text-blue-500 transition-all duration-300"><FaExternalLinkAlt /></span>
           </Link>
           <p className="text-[#c2c1c1] capitalize mt-3">
             These projects highlight my ability to create dynamic and responsive

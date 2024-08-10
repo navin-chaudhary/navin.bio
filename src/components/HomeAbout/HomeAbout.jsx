@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="mb-8 border-t-[1px] border-[#939396] pt-5">
       <h2 className="text-xl lg:text-2xl text-white  font-bold mb-4">About me</h2>
-      <p className="text-[#c2c1c1]  capitalize ">
+      <p className="text-[#c2c1c1]  ">
         Hey, I'm Navin Chaudhary, a <span className="text-white ">frontend engineer</span> who builds things using
         technologies I've learned so far, such as HTML, CSS,tailwindcss , JavaScript , React js. I'm
         always looking forward to learning new things as I grow, and I love
