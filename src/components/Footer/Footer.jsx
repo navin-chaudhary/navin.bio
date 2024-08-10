@@ -8,7 +8,7 @@ import { SiPeerlist } from "react-icons/si";
 import'./Footer.css'
 function Navbar() {
   return (
-    <div className="bg-[#040816] text-[#9e9ea4]   mt-7  pt-4 pb-2">
+    <div className="bg-[#040816] text-[#9e9ea4] border-t-[1px] border-[#939396]  mt-7  pt-4 pb-2">
       <div className="w-full  flex justify-between  ">
       <div>
         <Link
