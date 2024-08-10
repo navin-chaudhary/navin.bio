@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 
 function About() {
   useEffect(() => {
-    document.title = 'suresh .about';
+    document.title = 'navin .about';
    
   }, [])
 
@@ -18,7 +18,7 @@ function About() {
               <div className="min-h-[calc(100vh_-_160px)] ">
                 <section className="mb-8  pt-8 ">
                   <p className="text-[#c2c1c1] text-lg capitalize ">
-                    Hey everyone👋! I'm Suresh Chaudhary, a passionate and driven
+                    Hey everyone👋! I'm Navin Chaudhary, a passionate and driven
                     software engineer currently in my second year of college pursuing
                     a Bachelor's degree in Computer engineering. With a keen interest
                     in technology and a dedication to learning and growth, I strive to

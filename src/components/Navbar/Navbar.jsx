@@ -9,7 +9,7 @@ function Navbar() {
           to="/"
           className="text-xl hover:text-white transition-all duration-300"
         >
-          suresh.
+          navin.
         </Link>
       </div>
 
