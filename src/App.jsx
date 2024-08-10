@@ -24,8 +24,9 @@ function App() {
     {loading ? (
       <Loader />
     ) : (
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto ">
         <Navbar />
+      
         <Header />
         <About />
         <Projects />

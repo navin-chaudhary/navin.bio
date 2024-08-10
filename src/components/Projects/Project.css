@@ -1,0 +1,24 @@
+.project_card{
+    animation: cardanimate 1s both;
+}
+@keyframes cardanimate {
+        0%{
+            transform:translateX(-40px);
+       }
+       100%{
+        transform: translateX(0);
+       }
+      
+  }
+.project_card2{
+    animation: cardanimate2 1s both;
+}
+@keyframes cardanimate2 {
+        0%{
+            transform:translateX(40px);
+       }
+       100%{
+        transform: translateX(0);
+       }
+      
+  }

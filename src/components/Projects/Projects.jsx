@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import './Project.css'
 function Projects() {
   return (
     <section className="mb-8 border-t-[1px] border-[#939396] pt-5">
@@ -8,7 +9,7 @@ function Projects() {
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-        <div className="bg-gray-900 p-4 rounded-lg ">
+        <div className="bg-gray-900 p-4 rounded-lg project_card">
           <Link
             to="https://git-user-liart.vercel.app"
             className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
@@ -21,7 +22,7 @@ function Projects() {
             their followers, following, and repositories.
           </p>
         </div>
-        <div className="bg-gray-900 p-4 rounded-lg">
+        <div className="bg-gray-900 p-4 rounded-lg project_card2">
           <Link
             to="https://weatherapp-navin-projects.vercel.app/"
             className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
@@ -35,7 +36,7 @@ function Projects() {
             more.
           </p>
         </div>
-        <div className="bg-gray-900 p-4 rounded-lg">
+        <div className="bg-gray-900 p-4 rounded-lg project_card">
           <Link
             to="https://news-theta-puce.vercel.app"
             className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"
@@ -49,7 +50,7 @@ function Projects() {
           </p>
         </div>
 
-        <div className="bg-gray-900 p-4 rounded-lg">
+        <div className="bg-gray-900 p-4 rounded-lg project_card2">
           <Link
             to="https://todo-list-gamma-wheat.vercel.app"
             className="font-bold border-b-[1px] tracking-widest flex items-center gap-1  transition-all duration-300 hover:border-gray-500  w-max text-lg text-white cursor-pointer"

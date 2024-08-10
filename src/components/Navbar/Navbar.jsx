@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
+    
     <div className="flex items-center justify-between   sticky top-0  h-16 z-50 bg-[#040816] ">
       <div>
         <Link
