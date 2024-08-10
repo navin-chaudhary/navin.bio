@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader/Loader';
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(()=>{
@@ -21,6 +22,7 @@ function App() {
   },[])
   return (
     <div className="main bg-[#040816] text-[#9e9ea4] min-h-screen p-3 pt-0 overflow-x-hidden">
+       <Analytics />
     {loading ? (
       <Loader />
     ) : (
