@@ -5,7 +5,6 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import './index.css'
 import Navbar from './components/Navbar/Navbar';
-// import { Outlet } from'react-router-dom';
 import Footer from './components/Footer/Footer';
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader/Loader';
@@ -13,11 +12,12 @@ function App() {
   const [loading, setLoading] = useState(true);
   useEffect(()=>{
     <Loader/>
-    document.title='navin .home'
     setTimeout(() => {
-      
       setLoading(false)
-    }, 200);
+    }, 500);  
+  },[])
+  useEffect(()=>{
+    document.title='navin .home'
   },[])
   return (
     <div className="main bg-[#040816] text-[#9e9ea4] min-h-screen p-3 pt-0 overflow-x-hidden">

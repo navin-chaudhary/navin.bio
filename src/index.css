@@ -7,3 +7,10 @@
     font-weight: 400;
     /* word-spacing: 1px; */
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(317.33deg, rgb(18, 19, 18), transparent 115.43%);
+}

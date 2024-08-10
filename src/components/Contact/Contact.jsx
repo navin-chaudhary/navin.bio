@@ -2,22 +2,17 @@ import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { useEffect } from "react";
-import Loader from "../Loader/Loader"; 
 import './Contact.css'
 function Contact() {
-  const [loading, setLoading] = useState(true)
 useEffect(()=>{
     document.title = "navin .contact"
-    setLoading(false)
+    
 },[])
   return (
     <>
       <div className="bg-[#040816] text-[#c0c0c6] min-h-screen pt-0 p-3 overflow-hidden font">
         <div className="max-w-3xl mx-auto">
-        {loading ? (
-            <Loader />
-          ) : (
-            <>
+        
           <Navbar />
           <div className="flex justify-center">
             <div className="shadow-inner  shadow-[#d9d9dd] p-8 rounded-lg  max-w-md w-full min-h-[calc(100vh_-_165px)] mt-2 ">
@@ -96,8 +91,7 @@ useEffect(()=>{
             </div>
           </div>
           <Footer />
-          </>
-          )}
+         
         </div>
       </div>
     </>

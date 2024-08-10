@@ -2,24 +2,18 @@ import React, { useState, useEffect } from "react";
 import './About.css'
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Loader from "../Loader/Loader"; 
 
 function About() {
-  const [loading, setLoading] = useState(true)
-
   useEffect(() => {
     document.title = 'navin .about';
-    setLoading(false)
+   
   }, [])
 
   return (
     <>
       <div className="bg-[#040816] text-[#9e9ea4] min-h-screen  pt-0 p-3 overflow-hidden font">
         <div className="max-w-3xl mx-auto ">
-          {loading ? (
-            <Loader />
-          ) : (
-            <>
+         
               <Navbar />
               <div className="min-h-[calc(100vh_-_160px)] ">
                 <section className="mb-8  pt-8 ">
@@ -57,8 +51,7 @@ function About() {
                 </div>
               </div>
               <Footer />
-            </>
-          )}
+            
         </div>
       </div>
     </>
