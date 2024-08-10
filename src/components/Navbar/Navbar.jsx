@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="flex items-center justify-between   sticky top-0 h-16 z-50 bg-[#040816] ">
+    <div className="flex items-center justify-between   sticky top-0  h-16 z-50 bg-[#040816] ">
       <div>
         <Link
           to="/"
@@ -21,14 +21,14 @@ function Navbar() {
               : "cursor-pointer hover:text-white transition-all duration-300"
           }
         >
-          About
+          about
         </NavLink>
         <NavLink
           target="_blank"
           to="/Resume.pdf"
           className="cursor-pointer hover:text-white transition-all duration-300"
         >
-          Resume
+          resume
         </NavLink>
         <NavLink 
         to='/contact'
@@ -37,7 +37,7 @@ function Navbar() {
             ? "text-white"
             : "cursor-pointer hover:text-white transition-all duration-300"
         }>
-          Contact
+          contact
         </NavLink>
       </ul>
     </div>

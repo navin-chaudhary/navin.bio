@@ -8,7 +8,7 @@ function About() {
     },[])
   return (
     <>
-      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen  pt-0 p-2">
+      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen  pt-0 p-3 overflow-hidden">
         <div className="max-w-3xl mx-auto ">
           <Navbar />
           <div className="min-h-[calc(100vh_-_160px)] ">
