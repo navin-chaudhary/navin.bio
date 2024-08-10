@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CiMail } from "react-icons/ci";
+import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
 import { SiPeerlist } from "react-icons/si";
 function Navbar() {
   return (
@@ -17,11 +18,52 @@ function Navbar() {
         </Link>
       </div>
       
-      <ul className="flex gap-3 text-2xl">
-        <li><CiMail /></li>
-        <li><FaLinkedin /></li>
-        <li><IoLogoGithub /></li>
-        <li><SiPeerlist /></li>
+      <ul className="flex gap-1 md:gap-2 items-center links">
+        <li className="text-muted-foreground hover:text-white ">
+          <Link
+            className="flex items-center px-1  tooltip"
+            to='mailto:hello@navin.bio'
+            aria-label={"Email"}
+          >
+            <MdEmail />
+          </Link>
+        </li>
+        <li className="text-muted-foreground hover:text-white">
+          <Link
+            className="flex items-center px-1 tooltip"
+            to='https://github.com/Navin-Chaudhary'
+            aria-label={"Github"}
+          >
+            <IoLogoGithub/>
+          </Link>
+        </li>
+        <li className="text-muted-foreground hover:text-white">
+          <Link
+            className="flex items-center px-1 tooltip"
+            to='https://www.linkedin.com/in/navin-chaudhary09/'
+            aria-label={"LinkedIn"}
+          >
+            <FaLinkedin/>
+          </Link>
+        </li>
+        <li className="text-muted-foreground hover:text-white">
+          <Link
+            className="flex items-center px-1 tooltip"
+            to='https://peerlist.io/navinhaudhary'
+            aria-label={"Peerlist"}
+          >
+            <SiPeerlist/>
+          </Link>
+        </li>
+        <li className="text-muted-foreground hover:text-white">
+          <Link
+            className="flex items-center pl-1 tooltip"
+            to='https://x.com/NavinChaud24674'
+            aria-label={"X/Twitter"}
+          >
+            <FaXTwitter />
+          </Link>
+        </li>
       </ul>
       </div>
     </div>
