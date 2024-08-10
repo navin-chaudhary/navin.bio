@@ -14,8 +14,8 @@ useEffect(()=>{
         <div className="max-w-3xl mx-auto">
         
           <Navbar />
-          <div className="flex justify-center">
-            <div className="shadow-inner  shadow-[#d9d9dd] p-8 rounded-lg  max-w-md w-full min-h-[calc(100vh_-_165px)] mt-2 ">
+          <div className="flex justify-center ">
+            <div className="shadow-inner  shadow-[#d9d9dd] p-8 rounded-lg  max-w-md w-full min-h-[calc(100vh_-_165px)] mt-2 form">
               <h2 className="text-2xl lg:text-3xl text-white font-semibold mb-4">
                 Contact Us
               </h2>
@@ -24,7 +24,7 @@ useEffect(()=>{
                 Fill the form below and connect with me!
               </p>
 
-              <form  className="space-y-4" action="https://submit-form.com/Uc5gI33Ok">
+              <form  className="space-y-4  " action="https://submit-form.com/Uc5gI33Ok">
                 <div>
                   <label
                     name="name"

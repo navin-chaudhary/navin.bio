@@ -3,3 +3,18 @@
     font-weight: 400;
     word-spacing: 1px;
 }
+.form{
+    animation: formanimation 2s ease-out 0s 1 normal;
+    /* animation: formanimation 2s  both;
+    animation-timeline: view();
+    animation-range: entry 40% cover 40%; */
+}
+@keyframes formanimation {
+    0%{
+        transform:translateX(100px);
+   }
+   100%{
+    transform: translateX(0);
+   }
+  }
+  
