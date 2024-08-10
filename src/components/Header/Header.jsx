@@ -3,7 +3,7 @@ import logo from '/Images/Logo.png'
 function Header() {
   return (
     <header className="flex items-center mb-8 md:mt-4 lg:mt-4 gap-4 lg:gap-5">
-      <div className='bg-[#696868] lg:w-28 lg:h-28 md:w-24 md:h-24 w-24 h-20 rounded-full overflow-hidden'>
+      <div className='bg-[#696868] lg:w-28 lg:h-28 md:w-24 md:h-24 w-20 h-20 rounded-full overflow-hidden'>
       <img src={logo} alt="Profile" className=" w-24 h-20 lg:w-28  lg:h-28 md:w-24 md:h-24 rounded-full mr-4 object-cover " />
       </div>
       <div>
