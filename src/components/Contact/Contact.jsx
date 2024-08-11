@@ -18,7 +18,7 @@ useEffect(()=>{
             <div className="   max-w-md w-full min-h-[calc(100vh_-_165px)]  form">
               <div className="shadow-inner  shadow-[#d9d9dd] mt-2 p-8  rounded-lg">
               <h2 className="text-2xl lg:text-3xl text-white font-semibold mb-4">
-                Contact Us
+              Let's talk
               </h2>
               <p className="text-gray-400 mb-6">
                 Have a question, want to collaborate, or just want to say hello?
