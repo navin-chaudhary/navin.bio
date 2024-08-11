@@ -20,7 +20,7 @@ function Navbar() {
       </div>
       
       <ul className="flex gap-1 md:gap-2 items-center links">
-        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-[2px] lg:p-1 md:p-1 sm:p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1   tooltip"
             to='mailto:hello@navin.bio'
@@ -29,7 +29,7 @@ function Navbar() {
             <MdEmail />
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-[2px] lg:p-1 md:p-1 sm:p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
             to='https://github.com/Navin-Chaudhary'
@@ -38,7 +38,7 @@ function Navbar() {
             <IoLogoGithub/>
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-[2px] lg:p-1 md:p-1 sm:p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
             to='https://www.linkedin.com/in/navin-chaudhary09/'
@@ -47,7 +47,7 @@ function Navbar() {
             <FaLinkedin/>
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-[2px] lg:p-1 md:p-1 sm:p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
             to='https://peerlist.io/navinchaudhary'
@@ -56,7 +56,7 @@ function Navbar() {
             <SiPeerlist/>
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-[2px] lg:p-1 md:p-1 sm:p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center pl-1 pr-1 tooltip"
             to='https://x.com/NavinChaud24674'
