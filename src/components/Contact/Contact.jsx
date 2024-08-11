@@ -10,7 +10,7 @@ useEffect(()=>{
 },[])
   return (
     <>
-      <div className="bg-[#040816] text-[#c0c0c6] min-h-screen pt-0 p-3 overflow-hidden font">
+      <div className="bg-[#09080A] text-[#c0c0c6] min-h-screen pt-0 p-3 overflow-hidden font">
         <div className="max-w-3xl mx-auto">
         
           <Navbar />

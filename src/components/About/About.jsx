@@ -10,10 +10,10 @@ function About() {
 
   return (
     <>
-      <div className="bg-[#040816] text-[#9e9ea4] min-h-screen  pt-10 p-3 overflow-hidden font">
+      <div className="bg-[#09080A] text-[#babac3] min-h-screen  pt-10 p-3 overflow-hidden font">
         <div className="max-w-3xl mx-auto ">
           <Navbar />
-          <div className="min-h-[calc(100vh_-_160px)] lg:p-3">
+          <div className="min-h-[calc(100vh_-_160px)] ">
             <section className="mb-8  pt-8 ">
               <p className="text-[#c2c1c1] text-lg capitalize ">
                 Hey everyone👋! I'm Navin Chaudhary, a passionate and driven

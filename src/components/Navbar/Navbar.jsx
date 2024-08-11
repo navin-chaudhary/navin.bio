@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 ">
-      <div className="max-w-3xl mx-auto px-3 lg:px-0 backdrop-blur-3xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#09080A] backdrop-blur-md">
+      <div className="max-w-3xl mx-auto px-3 lg:px-0 md:p-0">
         <div className="flex items-center justify-between h-16">
           <div>
             <Link

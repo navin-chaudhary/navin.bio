@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+::selection{
+    background-color: white;
+    color: black;
+}
 @font-face {
     font-family: myfont;
     src: url('/Fonts/c9a5bc6a7c948fb0-s.p.woff2');
@@ -10,10 +13,11 @@
 .main{
     font-family: myfont;
     font-weight: 500;
-   
+    /* background: linear-gradient(to left top, black, rgba(28, 26, 26, 0.01)900%, 900%, black); */
+
 }
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {

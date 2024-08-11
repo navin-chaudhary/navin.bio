@@ -8,7 +8,7 @@ import { SiPeerlist } from "react-icons/si";
 import'./Footer.css'
 function Navbar() {
   return (
-    <div className="bg-[#040816] text-[#9e9ea4]   mt-7  pt-4 pb-1">
+    <div className="bg-[#09080A] text-[#cfcfd5]   mt-7  pt-4 pb-1">
       <div className="w-full  flex justify-between  ">
       <div>
         <Link
@@ -20,7 +20,7 @@ function Navbar() {
       </div>
       
       <ul className="flex gap-1 md:gap-2 items-center links">
-        <li className="text-muted-foreground hover:text-white ">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1   tooltip"
             to='mailto:hello@navin.bio'
@@ -29,7 +29,7 @@ function Navbar() {
             <MdEmail />
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
             to='https://github.com/Navin-Chaudhary'
@@ -38,7 +38,7 @@ function Navbar() {
             <IoLogoGithub/>
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
             to='https://www.linkedin.com/in/navin-chaudhary09/'
@@ -47,7 +47,7 @@ function Navbar() {
             <FaLinkedin/>
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
             to='https://peerlist.io/navinchaudhary'
@@ -56,9 +56,9 @@ function Navbar() {
             <SiPeerlist/>
           </Link>
         </li>
-        <li className="text-muted-foreground hover:text-white">
+        <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
-            className="flex items-center pl-1 tooltip"
+            className="flex items-center pl-1 pr-1 tooltip"
             to='https://x.com/NavinChaud24674'
             aria-label={"X/Twitter"}
           >
