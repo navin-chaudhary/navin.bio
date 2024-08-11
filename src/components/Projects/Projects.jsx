@@ -4,8 +4,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import './Project.css'
 function Projects() {
   return (
-    <section className="mb-8  pt-5">
-      <h2 className="text-xl lg:text-2xl text-white font-bold mb-5">
+    <section className="mb-8  ">
+      <h2 className="text-xl lg:text-2xl text-white font-bold mb-7">
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
