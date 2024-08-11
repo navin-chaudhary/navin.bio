@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: myfont;
-    src: url('Fonts/c9a5bc6a7c948fb0-s.p.woff2');
+    src: url('/Fonts/c9a5bc6a7c948fb0-s.p.woff2');
 }
 .main{
     font-family: myfont;
