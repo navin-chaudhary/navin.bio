@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/Images/myphoto.png'
+import logo from '/Images/Logo.png'
 function Header() {
   return (
     <header className="flex items-center mb-8 md:mt-4 lg:mt-4 gap-4 lg:gap-5">
