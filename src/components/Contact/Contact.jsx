@@ -14,8 +14,9 @@ useEffect(()=>{
         <div className="max-w-3xl mx-auto">
         
           <Navbar />
-          <div className="flex justify-center ">
-            <div className="shadow-inner  shadow-[#d9d9dd] p-8 rounded-lg  max-w-md w-full min-h-[calc(100vh_-_165px)] mt-2 form">
+          <div className="flex justify-center pt-16">
+            <div className="   max-w-md w-full min-h-[calc(100vh_-_165px)]  form">
+              <div className="shadow-inner  shadow-[#d9d9dd] mt-2 p-8  rounded-lg">
               <h2 className="text-2xl lg:text-3xl text-white font-semibold mb-4">
                 Contact Us
               </h2>
@@ -88,6 +89,7 @@ useEffect(()=>{
                  
                 </div>
               </form>
+              </div>
             </div>
           </div>
           <Footer />

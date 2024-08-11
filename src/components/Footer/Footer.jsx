@@ -22,7 +22,7 @@ function Navbar() {
       <ul className="flex gap-1 md:gap-2 items-center links">
         <li className="text-muted-foreground hover:text-white ">
           <Link
-            className="flex items-center px-1  tooltip"
+            className="flex items-center px-1   tooltip"
             to='mailto:hello@navin.bio'
             aria-label={"Email"}
           >

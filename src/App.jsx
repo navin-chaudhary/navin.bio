@@ -21,7 +21,7 @@ function App() {
     document.title='navin .home'
   },[])
   return (
-    <div className="main bg-[#040816] text-[#9e9ea4] min-h-screen p-3 pt-0 overflow-x-hidden">
+    <div className="main bg-[#040816] text-[#9e9ea4] min-h-screen p-3 pt-16 overflow-x-hidden">
        <Analytics />
     {loading ? (
       <Loader />
