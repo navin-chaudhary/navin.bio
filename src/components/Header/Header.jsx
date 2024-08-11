@@ -22,7 +22,7 @@ function Header() {
           Frontend focused Full Stack Developer
         </p>
         <Link to="/contact" >
-        <div className="flex items-center bg-[#3c3a3a] border-t-[2px] border-b-[2px] border-[#7a7878] w-44 justify-center rounded-md mt-[3px] cursor-pointer">
+        <div className="flex items-center bg-[#242323] border-t-[1px] border-b-[1px] border-[#7a7878] w-44 justify-center rounded-md mt-[3px] cursor-pointer">
         <span class="relative flex h-2 w-2 mr-2">
           <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
           <span class="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>

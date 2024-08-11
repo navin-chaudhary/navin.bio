@@ -76,7 +76,7 @@ function Projects() {
           <div
             key={index}
             ref={(el) => (projectRefs.current[index] = el)}
-            className="border-t-[1px] border-b-[1px] border-[#939396] p-4 rounded-lg project_card bg-[#2d2c2c] hover:border-l-[1px] hover:bg-[#171717] hover:border-t-[0px] transition-all duration-300"
+            className="border-t-[1px] border-b-[1px] border-[#939396] p-4 rounded-lg project_card bg-[#0f0d0d] hover:border-l-[1px] hover:bg-[#211f1f] hover:border-t-[0px] transition-all duration-300"
           >
             <Link
               to={project.url}

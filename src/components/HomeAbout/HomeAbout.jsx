@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section className="mb-8  ">
+    <section className="mb-8   ">
       <h2 className="text-xl lg:text-2xl text-white  font-bold mb-4">About me</h2>
       <p className="text-[#c2c1c1]  ">
         Hey, I'm Navin Chaudhary, a <span className="text-white ">frontend engineer</span> who builds things using
