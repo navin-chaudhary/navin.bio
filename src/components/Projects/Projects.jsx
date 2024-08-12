@@ -50,9 +50,9 @@ function Projects() {
       description: "Weather app is a website where you will find multiple tools on a single page, which includes week's forecast, Temperature, Weather mode, UV, Wind, Pressure, Humidity, Sunset/sunrise time and much more."
     },
     {
-      title: "CoffeWeb",
+      title: "Coffee Website",
       url: "https://coffeweb.navin.bio",
-      description: "News is a React app where you will find news highlights. This data is provided by the NYT API and you can sort news by category and you can also search for articles. This app showcases my skills in React, Tailwind and JavaScript."
+      description: "I developed a website for a coffee shop, showcasing their menu, story, and brand identity. . I used React JavaScript , Tailwind ,Html  to build the website, and implemented responsive design to ensure a seamless experience across various devices."
     },
     {
       title: "To-do List",
