@@ -32,7 +32,7 @@ function Navbar() {
         <li className="text-muted-foreground hover:text-white bg-[#2d2c2c] p-[2px] lg:p-1 md:p-1 sm:p-1 rounded-md border-t-[1px] border-b-[1px] hover:border-t-[0px] hover:border-l-[1px] transition-all duration-300 border-[#686666] hover:bg-[#191919]">
           <Link
             className="flex items-center px-1 tooltip"
-            to='https://github.com/Navin-Chaudhary'
+            to='https://github.com/navin-chaudhary'
             aria-label={"Github"}
           >
             <IoLogoGithub/>
