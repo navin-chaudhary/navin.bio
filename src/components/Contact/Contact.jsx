@@ -34,11 +34,12 @@ useEffect(()=>{
                   >
                     Name
                   </label>
+                
                   <input
                     type="text"
                     id="name"
                     name="name"
-                    className="mt-2 block w-full p-2 text-black font-bold rounded-md outline-none  focus:outline-blue-600 sm:text-sm"
+                    className="mt-2 block w-full p-2 text-black font-bold rounded-md outline-none   focus:outline-blue-600 sm:text-sm"
                     placeholder="What's your good name?"
                     required
                   />
