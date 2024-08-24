@@ -94,7 +94,7 @@ function Projects() {
           <img
             src={image}
             alt={`${project.title} - Image ${imageIndex + 1}`}
-            className="w-full  object-fill rounded-lg"
+            className="w-full  object-fill rounded-lg border-[15px]  border-blue-500"
           />
         </SwiperSlide>
       ))}
