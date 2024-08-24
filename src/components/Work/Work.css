@@ -1,10 +1,14 @@
-
 .font{
     font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     word-spacing: 1px;
 }
 @font-face {
     font-family: myfont;
     src: url('/Fonts/c9a5bc6a7c948fb0-s.p.woff2');
+}
+.main{
+    font-family: myfont;
+    font-weight: 500;
+    
 }

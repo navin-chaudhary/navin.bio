@@ -20,11 +20,32 @@ function Navbar() {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "text-white"
+                  ? "text-blue-300"
                   : "cursor-pointer hover:text-white transition-all duration-300"
               }
             >
               about
+            </NavLink>
+            <NavLink
+              to="/Work"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-300"
+                  : "cursor-pointer hover:text-white transition-all duration-300"
+              }
+            >
+              work
+            </NavLink>
+           
+            <NavLink 
+              to='/contact'
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-300"
+                  : "cursor-pointer hover:text-white transition-all duration-300"
+              }
+            >
+              contact
             </NavLink>
             <NavLink
               target="_blank"
@@ -32,16 +53,6 @@ function Navbar() {
               className="cursor-pointer hover:text-white transition-all duration-300"
             >
               resume
-            </NavLink>
-            <NavLink 
-              to='/contact'
-              className={({ isActive }) =>
-                isActive
-                  ? "text-white"
-                  : "cursor-pointer hover:text-white transition-all duration-300"
-              }
-            >
-              contact
             </NavLink>
           </ul>
         </div>

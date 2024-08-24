@@ -10,9 +10,11 @@ function About() {
 
   return (
     <>
-      <div className="bg-[#09080A] text-[#babac3] min-h-screen  pt-10 p-3 overflow-hidden font">
+      <div className="bg-[#09080A] text-[#babac3] min-h-screen  pt-10 p-3 overflow-hidden font ">
         <div className="max-w-3xl mx-auto ">
+          <div className="main">
           <Navbar />
+          </div>
           <div className="min-h-[calc(100vh_-_160px)] ">
             <section className="mb-8  pt-8 ">
               <p className="text-[#c2c1c1] text-lg capitalize ">
