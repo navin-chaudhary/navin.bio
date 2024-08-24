@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection{
-    background-color: white;
-    color: black;
-}
 @font-face {
     font-family: myfont;
     src: url('/Fonts/c9a5bc6a7c948fb0-s.p.woff2');
