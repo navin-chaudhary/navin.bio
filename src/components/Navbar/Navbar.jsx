@@ -27,7 +27,7 @@ function Navbar() {
               about
             </NavLink>
             <NavLink
-              to="/Work"
+              to="/work"
               className={({ isActive }) =>
                 isActive
                   ? "text-blue-300"
