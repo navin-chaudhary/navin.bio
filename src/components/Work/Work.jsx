@@ -126,7 +126,7 @@ function Work() {
                 <p className="text-[#060606] capitalize mt-3 hover:scale-1  lg:h-40 sm:h-36  overflow-hidden ">
                   {project.description}
                 </p>
-                <div className=" flex items-center justify-around mt-2">
+                <div className=" flex items-center justify-around mt-2 ">
                   <Link
                   to={project.giturl}
                     area-message="not open sourced yet"
