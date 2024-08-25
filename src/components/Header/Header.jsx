@@ -19,7 +19,7 @@ function Header() {
           Navin Chaudhary
         </p>
         <p className="lg:text-lg text-sm text-[#ebebf1] ">
-          Frontend focused Full Stack Developer
+          Frontend Developer
         </p>
         <Link to="/contact" >
         <div className="flex items-center bg-[#242323] border-t-[1px] border-b-[1px] border-[#7a7878] w-44 justify-center rounded-md mt-[3px] cursor-pointer   shadow shadow-green-700">

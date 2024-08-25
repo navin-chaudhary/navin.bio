@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { BiLinkExternal } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
 import "./Work.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -35,6 +36,7 @@ function Work() {
 
   const projects = [
     {
+     giturl:"https://github.com/navin-chaudhary/GitUser",
       title: "Gituser",
       url: "https://gituser.navin.bio",
       description:
@@ -42,6 +44,7 @@ function Work() {
       images: [`${git1}`, `${git2}`],
     },
     {
+        giturl:"https://github.com/navin-chaudhary/Weather_App",
       title: "Weather App",
       url: "https://weatherapp.navin.bio",
       description:
@@ -49,45 +52,38 @@ function Work() {
       images: [`${weather1}`, `${weather2}`],
     },
     {
+        giturl:"https://github.com/navin-chaudhary/CoffeWeb",
       title: "Coffee Website",
       url: "https://coffeweb.navin.bio",
       description:
         "I developed a website for a coffee shop, showcasing their menu, story, and brand identity. . I used React JavaScript , Tailwind ,Html  to build the website, and implemented responsive design to ensure a seamless experience across various devices.",
       images: [
-        `${coffe1}`, 
-        `${coffe2}`, 
-        `${coffe3}`, 
-        `${coffe4}`, 
-        `${coffe5}`, 
-        `${coffe6}`, 
-        `${coffe7}`, 
-        `${coffe8}`, 
-        
-    ],
+        `${coffe1}`,
+        `${coffe2}`,
+        `${coffe3}`,
+        `${coffe4}`,
+        `${coffe5}`,
+        `${coffe6}`,
+        `${coffe7}`,
+        `${coffe8}`,
+      ],
     },
     {
+        giturl:"https://github.com/navin-chaudhary/News",
       title: "News",
       url: "https://news.navin.bio",
       description:
         "News is a React app where you will find news highlights. This data is provided by the NYT API and you can sort news by category and you can also search for articles.",
-      images: [
-        `${news1}`,
-        `${news2}`,
-        `${news3}`,
-        `${news4}`,
-        
-    ],
+      images: [`${news1}`, `${news2}`, `${news3}`, `${news4}`],
     },
     {
-        title: "To-do List",
-        url: "https://to-do.navin.bio",
-        description:
-          "These projects highlight my ability to create dynamic and responsive user interfaces, manage state efficiently and implement create, read, delete operations. This app showcases my skills in HTML, CSS and JavaScript.",
-        images: [
-            `${todo1}`,
-            `${todo2}`,
-        ],
-      }
+        giturl:"https://github.com/navin-chaudhary/Todo-List",
+      title: "To-do List",
+      url: "https://to-do.navin.bio",
+      description:
+        "These projects highlight my ability to create dynamic and responsive user interfaces, manage state efficiently and implement create, read, delete operations. This app showcases my skills in HTML, CSS and JavaScript.",
+      images: [`${todo1}`, `${todo2}`],
+    },
   ];
 
   return (
@@ -123,14 +119,45 @@ function Work() {
                 </div>
                 <Link
                   to={project.url}
-                  className="font-bold  mt-4 tracking-wider flex items-center gap-1 transition-all duration-300  w-max text-lg text-black cursor-pointer uppercase font-bold"
+                  className="font-bold  mt-4 tracking-wider flex items-center gap-1 transition-all duration-300  w-max text-lg text-black cursor-pointer uppercase "
                 >
                   {project.title}
-                 
                 </Link>
-                <p className="text-[#060606] capitalize mt-3 hover:scale-1 ">
+                <p className="text-[#060606] capitalize mt-3 hover:scale-1  lg:h-40 sm:h-36  overflow-hidden ">
                   {project.description}
                 </p>
+                <div className=" flex items-center justify-around mt-2">
+                  <Link
+                  to={project.giturl}
+                    area-message="not open sourced yet"
+                    aria-disabled="false"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    
+                  >
+                    <div className="flex items-center gap-3 text-black font-bold text-xl">
+                      <span>
+                        <FaGithub />
+                      </span>
+                      <span>Code</span>
+                    </div>
+                  </Link>
+                  <Link
+                  to={project.url}
+                    area-message="not open sourced yet"
+                    aria-disabled="false"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    
+                  >
+                    <div className="flex items-center gap-3 text-black font-bold text-xl">
+                      <span className="font-bold hover:translate-y-[-2px] duration-300 hover:text-blue-600">
+                      <BiLinkExternal />
+                      </span>
+                      <span>Visit</span>
+                    </div>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>

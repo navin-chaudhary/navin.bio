@@ -57,7 +57,7 @@ useEffect(()=>{
                     id="email"
                     name="email"
                     className="mt-2 block w-full text-black font-bold p-2  rounded-md outline-none focus:outline-blue-600 sm:text-sm"
-                    placeholder="What's your web address?"
+                    placeholder="What's your Email address?"
                     required
                   />
                 </div>

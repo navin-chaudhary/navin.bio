@@ -13,7 +13,7 @@ function Navbar() {
       <div>
         <Link
           to="/"
-          className="text-xl hover:text-white transition-all duration-300"
+          className="text-lg sm:text-xl hover:text-white transition-all duration-300"
         >
           Navin Chaudhary
         </Link>
