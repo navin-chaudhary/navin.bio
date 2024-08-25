@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import { FaHome } from "react-icons/fa";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -67,7 +67,14 @@ function Navbar() {
           </button>
         </div>
         <ul className="flex flex-col gap-3 text-lg p-4 bg-[#09080A] items-center shadow-sm shadow-[#d9d9dd] rounded-lg">
-          
+          <div className="fixed left-2 top-[58px] text-xl">
+          <Link to="/"
+          className="h-4"
+          >
+        
+          <FaHome />
+          </Link>
+          </div>
           <NavItem to="/about" text="about" onClick={toggleMenu} />
           <NavItem to="/work" text="work" onClick={toggleMenu} />
           <NavItem to="/contact" text="contact" onClick={toggleMenu} />
