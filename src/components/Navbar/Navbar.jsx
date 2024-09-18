@@ -100,7 +100,7 @@ function NavItem({ to, text, isExternal, onClick }) {
         onClick={onClick}
       >
         {text}
-      </NavLink>
+      </NavLink>  
     );
   }
 
