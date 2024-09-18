@@ -1,42 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "./Project.css";
 
 function Projects() {
-  const projectRefs = useRef([]);
 
-  useEffect(() => {
-    projectRefs.current.forEach((el) => {
-      if (!el) return;
-
-      const handleMouseMove = (e) => {
-        const rect = el.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const deltaX = (x - centerX) / centerX;
-        const deltaY = (y - centerY) / centerY;
-
-        el.style.transform = `perspective(1000px) rotateX(${deltaY * 10}deg) rotateY(${-deltaX * 10}deg) translateZ(20px)`;
-      };
-
-      const handleMouseLeave = () => {
-        el.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-      };
-
-      el.addEventListener('mousemove', handleMouseMove);
-      el.addEventListener('mouseleave', handleMouseLeave);
-
-      return () => {
-        el.removeEventListener('mousemove', handleMouseMove);
-        el.removeEventListener('mouseleave', handleMouseLeave);
-      };
-    });
-  }, []);
 
   const projects = [
     {
@@ -75,8 +43,8 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            ref={(el) => (projectRefs.current[index] = el)}
-            className="border-t-[1px] border-b-[1px]  border-[#939396] p-4 rounded-lg project_card bg-[#0f0d0d] hover:border-l-[1px] hover:bg-[#211f1f] hover:border-t-[0px] transition-all duration-300"
+          
+            className="border-t-[1px] border-b-[1px]  border-[#939396] p-4 rounded-lg project_card bg-[#0f0d0d] hover:border-l-[1px] hover:bg-[#211f1f] hover:border-t-[0px] transition-all duration-100"
           >
             <Link
               to={project.url}
