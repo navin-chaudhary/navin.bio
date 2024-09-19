@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import "./Project.css";
-
+import { HoverEffect } from "./card-hover-effect";
 function Projects() {
 
 
@@ -39,28 +39,8 @@ function Projects() {
       <h2 className="text-xl lg:text-2xl text-white font-bold mb-7">
         Projects
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-          
-            className=" border-[#272627] border-[1px]  p-4 rounded-lg project_card bg-[#09080A]  "
-          >
-            <Link
-              to={project.url}
-              className="font-bold border-b-[1px] tracking-wider flex items-center gap-1 transition-all duration-300 hover:border-gray-500 w-max text-lg text-white cursor-pointer "
-            >
-              {project.title}
-              <span className="hover:translate-y-[-2px] hover:text-blue-500 transition-all duration-300">
-                <FaExternalLinkAlt />
-              </span>
-            </Link>
-            <p className="text-[#c2c1c1] capitalize mt-3 hover:scale-1 ">
-              {project.description}
-            </p>
-          </div>
-        ))}
-      </div>
+      <HoverEffect items={projects} />
+      
     </section>
   );
 }
