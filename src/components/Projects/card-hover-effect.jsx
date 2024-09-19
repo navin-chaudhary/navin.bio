@@ -53,7 +53,7 @@ export const Card = ({
   return (
     <div
       className={Cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-[#09080A] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-2 overflow-hidden bg-[#09080A] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}>
       <div className="relative z-50">
@@ -91,7 +91,7 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={Cn("text-[#c2c1c1] capitalize mt-3 hover:scale-1", className)}>
+      className={Cn("text-[#c2c1c1] capitalize mt-3 hover:scale-1 text-sm ", className)}>
       {children}
     </p>
   );
