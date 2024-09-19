@@ -44,7 +44,7 @@ function Projects() {
           <div
             key={index}
           
-            className="border-t-[1px] border-b-[1px]  border-[#939396] p-4 rounded-lg project_card bg-[#0f0d0d] hover:border-l-[1px] hover:bg-[#211f1f] hover:border-t-[0px] transition-all duration-100"
+            className=" border-[#272627] border-[1px]  p-4 rounded-lg project_card bg-[#09080A]  "
           >
             <Link
               to={project.url}
