@@ -35,7 +35,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
          
-          <Card link={item.url}>
+          <Card link={item.url} className='border-[1px] border-[#272627]'>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>

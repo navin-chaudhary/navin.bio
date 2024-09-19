@@ -39,6 +39,7 @@ function Projects() {
       <h2 className="text-xl lg:text-2xl text-white font-bold mb-7">
         Projects
       </h2>
+      
       <HoverEffect items={projects} />
       
     </section>
