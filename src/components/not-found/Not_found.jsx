@@ -14,9 +14,9 @@ function Not_found() {
         <Navbar/>
         <div className='min-h-[calc(100vh_-_100px)] flex justify-center flex-col items-center'>
         <h1 className="text-5xl bg-white  text-black rounded-lg cursor-not-allowed"><BiError/></h1>
-      <h1 className='text-2xl mt-3 text-white font-bold'>404 | Page Not Found</h1>
-      <p className='text-sm mt-2'>This page has been moved or was never created.</p>
-      <button onClick={gotohomepage} className=' animate-pulse  text-black rounded-md font-bold px-2 mt-2 bg-green-300'>Go To Home Page </button>
+      <h1 className='text-2xl mt-3 text-red-400 font-bold'>Error 404</h1>
+      <p className='text-base mt-2 text-white '>I really tried, but couldn't find the page!</p>
+      <button onClick={gotohomepage} className=' animate-pulse  text-black rounded-md font-bold px-2 mt-2 bg-green-300 uppercase'>Go To Home Page </button>
       </div>
       <Footer/>
     </div>

@@ -9,11 +9,14 @@
 .main{
     font-family: myfont;
     font-weight: 500;
-    /* background: linear-gradient(to left top, black, rgba(28, 26, 26, 0.01)900%, 900%, black); */
-
+    
+}
+::selection{
+    background: #27AF61;
+    color: #FEFFE0;
 }
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
     border-radius: 10px;
 }
 

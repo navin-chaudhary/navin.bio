@@ -36,7 +36,7 @@ function Projects() {
 
   return (
     <section className="mb-8">
-      <h2 className="text-xl lg:text-2xl text-white font-bold mb-7">
+      <h2 className="text-xl lg:text-2xl text-white font-bold mb-4">
         Projects
       </h2>
       
