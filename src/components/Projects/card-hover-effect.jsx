@@ -78,7 +78,7 @@ export const CardTitle = ({
   return (
     <Link 
       to={link}
-      className={Cn("font-bold border-b-[1px] tracking-wider flex items-center gap-1 transition-all duration-300 hover:border-gray-500 w-max text-lg text-white cursor-pointer", className)}
+      className={Cn("font-bold border-b-[2px] border-blue-400 hover:border-blue-600 tracking-wider flex items-center gap-1 transition-all duration-300  w-max text-lg text-white cursor-pointer", className)}
     >
       {children}
     </Link>
