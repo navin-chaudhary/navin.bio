@@ -11,7 +11,7 @@ function Navbar() {
   const links = [
     { icon: <MdEmail />, url: "mailto:hello@navin.bio", label: "Email" },
     { icon: <IoLogoGithub />, url: "https://github.com/navin-chaudhary", label: "Github" },
-    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/navin-chaudhary09/", label: "LinkedIn" },
+    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/navinchaudhary9", label: "LinkedIn" },
     { icon: <SiPeerlist />, url: "https://peerlist.io/navinchaudhary", label: "Peerlist" },
     { icon: <FaXTwitter />, url: "https://x.com/NavinDeveloper", label: "X/Twitter" },
   ];

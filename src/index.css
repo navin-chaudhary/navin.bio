@@ -11,10 +11,7 @@
     font-weight: 500;
     
 }
-::selection{
-    background: #27AF61;
-    color: #FEFFE0;
-}
+
 ::-webkit-scrollbar {
     width: 4px;
     border-radius: 10px;

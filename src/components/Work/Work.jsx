@@ -10,6 +10,11 @@ import { EffectCards, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
+import eshop from "/Images/e-shop.png";
+import eshop2 from "/Images/e-shop2.png";
+import eshop3 from "/Images/e-shop3.png";
+import eshop4 from "/Images/e-shop4.png";
+import eshop5 from "/Images/e-shop5.png";
 import git1 from "/Images/git1.png";
 import git2 from "/Images/git2.png";
 import weather1 from "/Images/weather1.png";
@@ -35,6 +40,14 @@ function Work() {
   }, []);
 
   const projects = [
+    {
+     giturl:"https://github.com/navin-chaudhary/e-commerce",
+      title: "E-Commerce",
+      url: "https://e-shop-new-2.vercel.app",
+      description:
+        "The e-commerce site provides a  responsive design, email/password and Google authentication, smooth navigation, and an organized product catalog. Users can easily  add items to their cart, save favorites, and enjoy seamless functionality on all devices.",
+      images: [`${eshop}`,`${eshop3}`, `${eshop2}`,`${eshop4}`,`${eshop5}`],
+    },
     {
      giturl:"https://github.com/navin-chaudhary/GitUser",
       title: "Gituser",

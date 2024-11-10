@@ -57,7 +57,7 @@ export const Card = ({
         className
       )}>
       <div className="relative z-50">
-        <div className="p-4">
+        <div className="p-2">
           {React.Children.map(children, child => {
             if (React.isValidElement(child) && child.type === CardTitle) {
               return React.cloneElement(child, { link });
@@ -91,7 +91,7 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={Cn("text-[#c2c1c1] capitalize mt-3 hover:scale-1 text-sm ", className)}>
+      className={Cn("text-[#c2c1c1]  capitalize mt-3 hover:scale-1 font-light  ", className)}>
       {children}
     </p>
   );

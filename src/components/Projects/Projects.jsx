@@ -8,6 +8,11 @@ function Projects() {
 
   const projects = [
     {
+      title: "E-Commerce",
+      url: "https://e-shop-new-2.vercel.app",
+      description: "The e-commerce site provides a responsive design, email/password and Google authentication, smooth navigation, and an organized product catalog. Users can easily add items to their cart, save favorites, and enjoy seamless functionality on all devices."
+    },
+    {
       title: "Gituser",
       url: "https://gituser.navin.bio",
       description: "Gituser is a website that allows you to enter a username and get all relevant information about a GitHub user or organization, including their followers, following, and repositories."
