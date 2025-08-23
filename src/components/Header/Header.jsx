@@ -1,40 +1,103 @@
-import React,{useState} from "react";
+import React from "react";
 import logo from "/Images/Logo.png";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../context/ThemeContext";
+import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Header() {
+  const { isDark } = useTheme();
 
   return (
-    <header className="flex items-center mb-8 md:mt-4 lg:mt-4 gap-4 lg:gap-5">
-     
-      <div className="bg-[#696868] lg:w-28 lg:h-28 md:w-24 md:h-24 w-20 h-20 rounded-full overflow-hidden">
-        <img
-          src={logo}
-          alt="Profile"
-          className=" w-24 h-20 lg:w-28  lg:h-28 md:w-24 md:h-24 rounded-full mr-4 object-cover bg-slate-600"
-        />
+    <header className="relative mb-12 md:mt-6 lg:mt-8">
+      {/* Debug theme indicator */}
+      <div className={`absolute top-0 right-0 p-2 text-xs rounded ${
+        isDark ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
+      }`}>
+        Theme: {isDark ? 'Dark' : 'Light'}
       </div>
-      <div>
-        <h1 className=" text-xl lg:text-3xl text-[#FAFAFA] font-bold ">
-          Hey I'm
-        </h1>
-        <p className="text-[#CFE5FF] font-bold text-2xl lg:text-3xl">
-          Navin Chaudhary
-        </p>
-        <p className="lg:text-lg text-sm text-[#ebebf1] ">
-          Frontend Developer
-        </p>
-        <Link to="/contact" >
-        <div className="flex items-center bg-[#242323] border-t-[1px] border-b-[1px] border-[#7a7878] w-44 justify-center rounded-md mt-[3px] cursor-pointer   shadow shadow-green-700">
-        <span class="relative flex h-2 w-2 mr-2">
-          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-          <span class="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
-        </span>
-        <p className="lg:text-md  text-md text-[#eff5f1] ">
-          Available for Work!
-        </p>
+      
+      {/* Background decoration */}
+      <div className={`absolute inset-0 rounded-3xl opacity-5 ${
+        isDark ? 'bg-gradient-to-br from-[#3b82f6] to-[#8b5cf6]' : 'bg-gradient-to-br from-[#3b82f6] to-[#8b5cf6]'
+      }`}></div>
+      
+      <div className={`relative p-8 rounded-3xl border transition-all duration-300 hover:shadow-blue-500/10 ${
+        isDark 
+          ? 'border-[#272627] bg-[#151212] shadow-blue-500/5' 
+          : 'border-[#e2e8f0] bg-white shadow-lg'
+      }`}>
+        <div className="flex flex-col items-center gap-6 lg:flex-row lg:items-start lg:gap-8">
+          {/* Profile Image */}
+          <div className="relative group">
+            <div className={`absolute inset-0 rounded-full bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] opacity-20 blur-xl group-hover:opacity-30 transition-opacity duration-300`}></div>
+            <div className={`relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 transition-all duration-300 ${
+              isDark 
+                ? 'border-[#3b82f6]/30 shadow-blue-500/20 group-hover:border-[#3b82f6]/50 group-hover:shadow-blue-500/30' 
+                : 'border-[#3b82f6]/20 shadow-blue-500/10 group-hover:border-[#3b82f6]/40 group-hover:shadow-blue-500/20'
+            }`}>
+              <img
+                src={logo}
+                alt="Navin Chaudhary"
+                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="flex-1 text-center lg:text-left">
+            <div className="mb-4">
+              <h1 className={`text-2xl lg:text-4xl font-bold mb-2 transition-colors duration-300 ${
+                isDark ? 'text-white' : 'text-[#1e293b]'
+              }`}>
+                Hey, I'm{" "}
+                <span className={`bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent`}>
+                  Navin Chaudhary
+                </span>
+              </h1>
+              <p className={`text-lg lg:text-xl font-medium transition-colors duration-300 ${
+                isDark ? 'text-[#CFE5FF]' : 'text-[#3b82f6]'
+              }`}>
+                Full Stack Developer @ <Link to="https://market.way2reach.in" target="_blank" rel="noopener noreferrer" className={`${isDark ? 'text-green-200' : 'text-black'} hover:underline`}>Way2Reach</Link>
+              </p>
+              <p className={`text-sm lg:text-base mt-2 max-w-2xl transition-colors duration-300 ${
+                isDark ? 'text-[#c2c1c1]' : 'text-[#64748b]'
+              }`}>
+                Passionate about creating innovative web solutions with modern technologies. 
+                Specializing in MERN stack and building scalable applications.
+              </p>
+            </div>
+
+            {/* Contact & Social Links */}
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start lg:gap-6">
+              {/* Contact Info */}
+              <div className="flex flex-wrap items-center gap-4 lg:gap-6">
+                <a 
+                  href="mailto:heynavin.im@gmail.com" 
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                    isDark 
+                      ? 'bg-[#242323] text-[#c2c1c1] hover:bg-[#2d2c2c] hover:text-[#3b82f6] border border-[#272627]' 
+                      : 'bg-gray-100 text-[#64748b] hover:bg-gray-200 hover:text-[#3b82f6] border border-[#e2e8f0]'
+                  }`}
+                >
+                  <FaEnvelope className="text-[#3b82f6]" />
+                  <span className="text-sm font-medium">heynavin.im@gmail.com</span>
+                </a>
+                <a 
+                  href="tel:+919157154504" 
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 ${
+                    isDark 
+                      ? 'bg-[#242323] text-[#c2c1c1] hover:bg-[#2d2c2c] hover:text-[#3b82f6] border border-[#272627]' 
+                      : 'bg-gray-100 text-[#64748b] hover:bg-gray-200 hover:text-[#3b82f6] border border-[#e2e8f0]'
+                  }`}
+                >
+                  <FaPhone className="text-[#3b82f6]" />
+                  <span className="text-sm font-medium">+91 9157154504</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        </Link>
       </div>
     </header>
   );

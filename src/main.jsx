@@ -13,6 +13,8 @@ import Contact from './components/Contact/Contact.jsx';
 import Work from './components/Work/Work.jsx';
 import Layout from './Layout.jsx';
 import Not_found from './components/not-found/Not_found.jsx';
+import { ThemeProvider } from './context/ThemeContext';
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -27,6 +29,8 @@ const router = createBrowserRouter(
 );
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
-</React.StrictMode>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </React.StrictMode>
 )
